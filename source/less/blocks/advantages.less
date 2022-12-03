@@ -7,10 +7,19 @@
 
 .advantages__list{
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 
   &--gray {
     background-color: #eee;
     padding: 24px 18px 28px 18px;
+  }
+  &--icons {
+    padding: 23px 18px 46px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
@@ -19,6 +28,8 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  padding: 0;
+  margin: 0;
 
   &--align-left {
     text-align: left;
@@ -26,46 +37,53 @@
 }
 
 .advantages__description {
+  padding: 0;
+  margin: 0;
 
   &--align-left {
     text-align: left;
   }
 }
 
-.advantages__list {
-  margin: 0;
-  padding: 0;
-}
-
 .advantages__item {
  list-style-type: none;
+
 
  &--with-img {
   background-color: #81B3D2;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 117px;
+  padding: 37px 18px;
  }
 
  &--img{
   padding: 0;
  }
 
- &--home{
-  background-image: url(../../img/advantages-home.svg);
-  background-repeat: no-repeat;
+ &--icon{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
  }
 
- &--food{
-  background-image: url(../../img/advantages-food.svg);
-  background-repeat: no-repeat;
- }
-
- &--gift{
-  background-image: url(../../img/advantages-gift.svg);
-  background-repeat: no-repeat;
- }
+ &--icon:last-child{
+  margin-bottom: 0;
 }
-
-.advantages__image{
+.advantages__image {
   padding: 0;
   margin: 0;
+}
+
+.advantages__item-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 237px;
+  padding-top: 8px;
+}
+
+.advantages__icon{
+  margin-right: 7px;
 }
