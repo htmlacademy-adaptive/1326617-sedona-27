@@ -1,0 +1,26 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__label{
+  color: #333333;
+}
+
+.input__input{
+  min-width: 248px;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 16px;
+
+  &::placeholder{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &--with-icon::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
