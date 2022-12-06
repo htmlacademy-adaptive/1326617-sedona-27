@@ -5,22 +5,50 @@
 
 .input__label{
   color: #333333;
+  padding-left: 16px;
 }
 
 .input__input{
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   min-width: 248px;
   background-color: #F2F2F2;
   border: none;
   padding: 16px;
 
   &::placeholder{
+    font-family: "PT Sans";
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     color: #000;
   }
 
+  &--with-icon{
+    min-width: auto;
+  }
+
   &--with-icon::placeholder{
     color: rgba(0, 0, 0, 0.3);
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &--area{
+    border: none;
+    overflow: auto;
+    outline: none;
+  }
+
+  &--area::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
   }
 }

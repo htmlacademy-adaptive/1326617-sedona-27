@@ -9,6 +9,15 @@
   padding: 24px 20px 39px 20px;
   border-bottom: 1px #E5E5E5 solid;
   appearance: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+
+  &--no-border{
+    border-bottom: none;
+  }
 }
 
 .form-feedback__title{
@@ -26,10 +35,30 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .form-feedback__item{
   list-style-type: none;
   margin-bottom: 16px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
 
+.form-feedback__block-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 82px;
+  margin: 0 20px 24px 20px;
+}
+
+.form-feedback__hint{
+  text-align: right;
+  min-width: 280px;
+  color: rgba(51, 51, 51, 0.6);
+}
