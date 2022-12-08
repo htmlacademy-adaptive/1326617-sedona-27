@@ -1,0 +1,64 @@
+.choice-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 280px;
+}
+
+.choice-block__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.choice-block__radio {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  margin-right: 16px;
+  position: relative;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    left: 33%;
+    top: 33%;
+  }
+}
+
+.choice-block__check {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  margin-right: 16px;
+  position: relative;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked::after {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 14px;
+    right: 12px;
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    content: "";
+  }
+}
