@@ -8,7 +8,6 @@
     background-color: #81b3d2;
     color: #ffffff;
     display: none;
-    min-width: 320px;
     padding: 0;
     margin: 0 auto;
     position: absolute;
@@ -38,12 +37,6 @@
     background-size: auto 7px;
     background-position: bottom;
   }
-
-  &:first-child {
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: top 17px right 18px;
-  }
 }
 
 .main-nav-link {
@@ -52,4 +45,25 @@
   color: #ffffff;
   margin: auto;
   display: block;
+}
+
+.main-nav__close-button {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  list-style-type: none;
+}
+
+.main-nav__toogle {
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  color: #81b3d2;
+  width: 23px;
+  height: 22px;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  padding: 0;
 }
