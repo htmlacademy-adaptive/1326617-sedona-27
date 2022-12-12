@@ -1,0 +1,40 @@
+.title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  &--align-left {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  &--intro {
+    margin-bottom: 35px;
+  }
+
+  &--large {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .title--align-left {
+    text-align: center;
+  }
+
+  .title--large {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}

@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 182px;
-  padding: 28px 0 23px;
+  padding: 28px 18px 23px 18px;
 }
 
 .main-footer__hashtag-link {
@@ -18,4 +18,14 @@
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 45px;
+    min-height: 48px;
+  }
 }
