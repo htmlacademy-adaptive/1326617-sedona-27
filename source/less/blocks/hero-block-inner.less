@@ -9,8 +9,19 @@
 }
 
 .hero-block-inner__img {
-  background-image: url("../img/separator-2.svg");
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom;
   height: 158px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero-block-inner {
+    min-width: 768px;
+    min-height: 290px;
+  }
+
+  .hero-block-inner__img {
+    height: 290px;
+  }
 }
