@@ -100,9 +100,13 @@
             </ul>
           </fieldset>
           <fieldset class="form-feedback__block form-block--impression">
-            <h3 class="title title--form-feedback">Ваше общее впечатление:</h3>
+            <div class="form-feedback__title-block">
+              <div class="separator-horizont"></div>
+              <h3 class="title title--form-feedback form-feedback__title">Ваше общее впечатление:</h3>
+              <div class="separator-horizont"></div>
+            </div>
             <legend class="visually-hidden">Ваше общее впечатление</legend>
-            <ul class="form-feedback__list form-feedback__list--choice">
+            <ul class="form-feedback__list form-feedback__list--radio">
               <li class="form-feedback__item choice-block">
                 <input class="form-feedback__input choice-block__radio" type="radio" name="impressions" value="Скорее положительное" checked>
                 <label class="form-feedback__label choice-block__label">Скорее положительное</label>
@@ -118,9 +122,13 @@
             </ul>
           </fieldset>
           <fieldset class="form-feedback__block form-block--place">
-            <h3 class="title title--form-feedback">Посещенные достопримечательности:</h3>
+            <div class="form-feedback__title-block">
+              <div class="separator-horizont"></div>
+              <h3 class="title title--form-feedback form-feedback__title">Посещенные<br> достопримечательности:</h3>
+              <div class="separator-horizont"></div>
+            </div>
             <legend class="visually-hidden">Посещенные достопримечательности</legend>
-            <ul class="form-feedback__list form-feedback__list--choice">
+            <ul class="form-feedback__list form-feedback__list--check">
               <li class="form-feedback__item choice-block">
                 <input class="form-feedback__input choice-block__check" type="checkbox" name="sight" value="Мост Дьявола" checked>
                 <label class="form-feedback__label choice-block__label">Мост Дьявола</label>
@@ -140,7 +148,11 @@
             </ul>
           </fieldset>
           <fieldset class="form-feedback__block form-feedback__block--no-border">
-            <h3 class="title title--form-feedback">Опишите свои эмоции:</h3>
+            <div class="form-feedback__title-block">
+              <div class="separator-horizont"></div>
+              <h3 class="title title--form-feedback form-feedback__title">Опишите свои эмоции:</h3>
+              <div class="separator-horizont"></div>
+            </div>
             <legend class="visually-hidden">Опишите свои эмоции:</legend>
               <label class="form-feedback__label">
                 <textarea class="form-feedback__text input__input input__input--area" name="attractions" rows="5" cols="auto">Опишите подробно все свои восторги</textarea>
