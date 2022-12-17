@@ -1,9 +1,4 @@
-.main-nav {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
-}
+
 
 .main-nav__burger-menu {
   background-color: #81b3d2;
@@ -29,6 +24,10 @@
 }
 
 .main-nav__item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
   list-style-type: none;
   width: 100%;
   min-height: 55px;
@@ -66,7 +65,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  z-index: 2;
+  z-index: 3;
   opacity: 0;
 }
 
@@ -80,10 +79,99 @@
 .main-nav__hamburger-lines {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  justify-content: space-between;
+  height: 22px;
+  width: 23px;
   position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 2;
 }
 
 .main-header__wrapper input[type="checkbox"]:checked ~ .main-nav__burger-menu {
   transform: translateX(0);
+}
+
+.main-nav__hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.main-nav__hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.main-nav__hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.main-header__wrapper input[type="checkbox"]:checked ~ .main-nav__hamburger-lines .line1 {
+  transform: rotate(45deg);
+  background-color: #ffffff;
+  width: 27px;
+}
+
+.main-header__wrapper input[type="checkbox"]:checked ~ .main-nav__hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.main-header__wrapper input[type="checkbox"]:checked ~ .main-nav__hamburger-lines .line3 {
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+  width: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav__hamburger-lines {
+    display: none;
+  }
+
+  .main-nav__burger-menu {
+    background-color: #ffffff;
+    color: #000000;
+    transform: none;
+    position: relative;
+  }
+
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .main-nav__item {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    list-style-type: none;
+    height: 56px;
+    min-width: 153px;
+    box-shadow: none;
+  }
+
+  .main-nav__item:last-child {
+    background-image: none;
+  }
+
+  .main-nav__item--active {
+    color: #766357;
+  }
+
+  .main-nav-link {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    color: #000000;
+    margin: auto;
+    display: block;
+  }
 }

@@ -139,3 +139,39 @@
     border: none;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .gallery-photo {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery-photo__item:first-child {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .gallery-photo__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    flex-grow: 1;
+  }
+
+  .gallery-photo__data {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px 20px;
+    margin: 0;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+  }
+}

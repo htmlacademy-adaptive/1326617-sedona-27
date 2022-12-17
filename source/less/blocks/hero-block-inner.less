@@ -1,6 +1,6 @@
 .hero-block-inner {
   background-image: url("../img/sedona_hero.svg"),
-    url("../img/back-hero-catalog.jpg");
+    url("../img/back-desktop-inner.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #808080;
@@ -9,7 +9,7 @@
 }
 
 .hero-block-inner__img {
-  background-image: url("../img/intro-triangle.svg");
+  background-image: url("../img/intro-triangle-hero.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 158px;
@@ -23,5 +23,16 @@
 
   .hero-block-inner__img {
     height: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero-block-inner {
+    min-width: 1200px;
+    min-height: 300px;
+  }
+
+  .hero-block-inner__img {
+    height: 300px;
   }
 }
