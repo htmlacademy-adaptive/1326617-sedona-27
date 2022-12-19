@@ -1,16 +1,28 @@
 .hero-block {
-  background-image: url("../../img/text-index.svg"),
-    url("../../img/back-mobile-2x.jpg");
+  background-image: url("../img/text-index.svg"),
+    url("../img/back-desktop.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #808080;
   min-width: 320px;
   min-height: 389px;
+  background-size: contain cover;
 }
 
 .hero-block__img {
-  background-image: url("../../img/separator-2.svg");
+  background-image: url("../img/intro-triangle-hero.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom;
   height: 389px;
+}
+
+@media (min-width: @tablet-width) {
+  .hero-block {
+    min-width: 768px;
+    min-height: 518px;
+  }
+
+  .hero-block__img {
+    height: 518px;
+  }
 }

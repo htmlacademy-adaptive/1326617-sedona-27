@@ -4,11 +4,20 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  max-width: 320px;
-  margin: 0 auto;
+  min-height: 100%;
+  min-width: 320px;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
 }

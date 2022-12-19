@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-width: 280px;
+  min-width: 224px;
 }
 
 .choice-block__label {
@@ -60,5 +60,14 @@
     width: 22px;
     height: 16px;
     content: "";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .choice-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: auto;
   }
 }
