@@ -122,6 +122,10 @@
   width: 27px;
 }
 
+.main-nav__item-logo {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__toogle {
     display: none;
@@ -173,5 +177,16 @@
     color: #000000;
     margin: auto;
     display: block;
+  }
+
+  .main-nav__item-logo {
+    display: flex;
+    justify-content: center;
+    min-width: 153px;
+  }
+
+  .main-header__logo-s {
+    display: block;
+    position: absolute;
   }
 }
