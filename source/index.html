@@ -48,6 +48,12 @@
     <main class="main-container">
       <div class="hero-block">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <div class="hero-block__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350">
+            <img src="img/text-index.svg" width="282" height="214">
+          </picture>
+        </div>
         <div class="hero-block__img"></div>
       </div>
       <div class="prologue">
@@ -66,7 +72,11 @@
             <p class="description">Седона не атракциаон для туристов, там течет своя жизнь</p>
           </li>
           <li class="advantages__item advantages__item--img">
-            <img class="advantages__image" src="img/photo-city.jpg" alt="Вид на улицу города Седона, здание с флагами, деревья и горы на заднем плане" width="320" height="260">
+            <picture>
+              <source class="advantages__image" media="(min-width: 1280px)" srcset="img/photo-city-desktop.jpg 1x", srcset="img/photo-city-desktop@2x.jpg 2x">
+              <source class="advantages__image" media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x", srcset="img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/photo-city-mobile.jpg" width="520" height="260" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Вид на улицу города Седона, здание с флагами, деревья и горы на заднем плане">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--icon">
             <svg class="advantages__icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +111,11 @@
             <p class="description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantages__item advantages__item--img">
-            <img class="advantages__image" src="img/photo-bridge.jpg" alt="Вид на каньон Мост дьявола, каменный выступ и зеленую долину" width="320" height="260">
+            <picture>
+              <source class="advantages__image" media="(min-width: 1280px)" srcset="img/photo-bridge-desktop.jpg 1x", srcset="img/photo-bridge-desktop@2x.jpg 2x">
+              <source class="advantages__image" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x", srcset="img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/photo-bridge-mobile.jpg" width="520" height="260" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Вид на каньон Мост дьявола, каменный выступ и зеленую долину">
+            </picture>
           </li>
           <li class="advantages__item">
             <ul class="advantages__list--gray">

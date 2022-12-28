@@ -28,12 +28,15 @@
 }
 
 .video-block__video {
-  background-image: url("../img/video-mobile.jpg");
-  background-repeat: no-repeat;
   width: 280px;
   height: 177px;
   background-color: #808080;
   margin: 0 20px;
+}
+
+.gallery-photo__video {
+  vertical-align: top;
+  object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,7 +50,12 @@
   .video-block__video {
     width: 648px;
     height: 500px;
-    background-size: cover;
+  }
+
+  .gallery-photo__video {
+    width: 648px;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -56,5 +64,11 @@
     width: 800px;
     height: 500px;
     background-size: cover;
+  }
+
+  .gallery-photo__video {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
   }
 }
