@@ -38,38 +38,11 @@
   border-bottom: 1px #e5e5e5 solid;
 }
 
-.gallery-photo__img {
+.gallery-photo__image {
   width: 280px;
   height: 280px;
   margin: 0;
-
-  &--one {
-    background-image: url("../img/photo-1-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--two {
-    background-image: url("../img/photo-2-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--three {
-    background-image: url("../img/photo-3-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  &--four {
-    background-image: url("../img/photo-4-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  vertical-align: top;
 }
 
 .gallery-photo__list {
@@ -160,14 +133,16 @@
     flex-grow: 1;
   }
 
-  .gallery-photo__img {
+  .gallery-photo__image {
     width: 324px;
     height: 267px;
+    object-fit: cover;
   }
 
-  .gallery-photo__item:first-child .gallery-photo__img {
+  .gallery-photo__item:first-child .gallery-photo__image {
     width: 648px;
     height: 400px;
+    object-fit: cover;
   }
 
   .gallery-photo__item:last-child .gallery-photo__data {
@@ -215,7 +190,7 @@
     height: 400px;
   }
 
-  .gallery-photo__item:first-child .gallery-photo__img {
+  .gallery-photo__item:first-child .gallery-photo__image {
     width: 1200px;
     height: 400px;
   }
@@ -236,7 +211,7 @@
     position: relative;
   }
 
-  .gallery-photo__img {
+  .gallery-photo__image {
     width: 400px;
     height: 267px;
   }
