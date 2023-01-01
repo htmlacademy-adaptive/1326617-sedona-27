@@ -24,8 +24,10 @@
 
 .hero-block-inner__logo {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 52px;
   flex-grow: 1;
 }
 
@@ -36,6 +38,10 @@
     min-width: 768px;
     min-height: 290px;
   }
+
+  .hero-block-inner__logo {
+    padding-top: 95px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -44,5 +50,9 @@
     background-size: cover;
     min-width: 1200px;
     min-height: 300px;
+  }
+
+  .hero-block-inner__logo {
+    padding-top: 101px;
   }
 }

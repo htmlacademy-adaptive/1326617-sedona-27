@@ -32,11 +32,22 @@
   height: 177px;
   background-color: #808080;
   margin: 0 20px;
+  position: relative;
 }
 
 .gallery-photo__video {
   vertical-align: top;
   object-fit: cover;
+}
+
+.video-block__triangle {
+  fill: #ffffff;
+  opacity: 0.7;
+  position: absolute;
+  top: 62px;
+  left: 116px;
+  width: 48px;
+  height: 54px;
 }
 
 @media (min-width: @tablet-width) {
@@ -57,9 +68,18 @@
     height: auto;
     object-fit: cover;
   }
+
+  .video-block__triangle {
+    top: 223px;
+    left: 300px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .video-block {
+    padding-bottom: 84px;
+  }
+
   .video-block__video {
     width: 800px;
     height: 500px;
@@ -70,5 +90,10 @@
     width: 800px;
     height: 500px;
     object-fit: cover;
+  }
+
+  .video-block__triangle {
+    top: 223px;
+    left: 376px;
   }
 }
