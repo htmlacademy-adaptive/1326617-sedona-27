@@ -17,8 +17,10 @@
 
 .hero-block__logo {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 90px;
   flex-grow: 1;
 }
 
@@ -41,6 +43,10 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-tablet-hero@2x.jpg");
   }
+
+  .hero-block__logo {
+    padding-top: 77px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -54,5 +60,9 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-desktop-hero@2x.jpg");
+  }
+
+  .hero-block__logo {
+    padding-top: 78px;
   }
 }
