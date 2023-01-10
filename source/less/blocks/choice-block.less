@@ -37,6 +37,19 @@
   }
 }
 
+.choice-block__radio:hover {
+  background-color: #e5e5e5;
+}
+
+.choice-block__radio:disabled {
+  background-color: #d5d5d5;
+
+  &:checked::after:disabled {
+    content: "";
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+}
+
 .choice-block__check {
   width: 46px;
   height: 46px;
@@ -60,6 +73,19 @@
     width: 22px;
     height: 16px;
     content: "";
+  }
+}
+
+.choice-block__check:hover {
+  background-color: #e5e5e5;
+}
+
+.choice-block__check:disabled {
+  background-color: #e5e5e5;
+
+  &:checked::after:disabled {
+    content: "";
+    background-color: rgb(51, 51, 51, 0.3);
   }
 }
 
