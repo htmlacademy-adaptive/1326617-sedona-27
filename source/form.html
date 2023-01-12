@@ -189,7 +189,7 @@
               </label>
           </fieldset>
           <div class="form-feedback__block-button">
-            <button class="form-feedback__button button-primary" type="submit">Оставить отзыв</button>
+            <a class="form-feedback__button button-primary" href="#modal-window-error">Оставить отзыв</a>
             <span class="form-feedback__hint">* — обязательные поля</span>
           </div>
         </div>
@@ -232,7 +232,7 @@
         </section>
         <section class="main-footer__copyright copyright">
           <h2 class="visually-hidden">Разработано в HTML Academy</h2>
-          <a class="copyright__link" href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru/">
             <span class="copyright__text">Разработано</span>
             <svg width="27" height="35">
               <use xlink:href="#logo-html-academy"></use>
@@ -241,5 +241,13 @@
         </section>
       </div>
     </footer>
+    <div class="modal" id="modal-window-error">
+      <div class="modal-window modal-window__1">
+        <h2 class="visually-hidden">ошибка в заполнении формы</h2>
+        <span class="title modal-window__title">Что-то пошло не так!</span>
+        <span class="description modal-window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
+        <a class="modal-window__button button-primary" href="#close">OK</a>
+      </div>
+    </div>
   </body>
 </html>
