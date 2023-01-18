@@ -4,12 +4,25 @@
   align-items: center;
   min-width: 128px;
   text-decoration: none;
+  fill: #000000;
+  color: #000000;
 }
 
 .copyright__text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
   margin-right: 12px;
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__link:hover {
+    fill: #81b3d2;
+    color: #81b3d2;
+  }
+
+  .copyright__link:active {
+    fill: #b3b3b3;
+    color: #b3b3b3;
+  }
 }

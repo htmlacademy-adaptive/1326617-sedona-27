@@ -8,8 +8,23 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
-  padding: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  min-width: 284px;
+  padding: 16px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.button-primary:active {
+  background-color: #5496bd;
+  color: rgba(225, 225, 255, 0.3);
+}
+
+.button-primary:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .button-primary:hover {
+    background-color: #669ec0;
+  }
 }

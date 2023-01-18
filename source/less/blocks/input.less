@@ -13,18 +13,18 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  min-width: 248px;
+  min-width: 240px;
   width: auto;
   background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.3);
-  border: none;
-  padding: 16px;
+  color: rgba(0, 0, 0);
+  padding: 12px;
+  border: 4px #f2f2f2 solid;
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.3);
   }
 
   &--with-icon {
@@ -39,16 +39,20 @@
   }
 
   &--area {
-    border: none;
+    resize: none;
     overflow: auto;
     outline: none;
   }
 
-  &--area::placeholder {
-    color: rgba(0, 0, 0, 0.3);
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
+  &:hover {
+    background-color: #e5e5e5;
+    border: 4px #e5e5e5 solid;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 4px #e5e5e5 solid;
+    outline: none;
   }
 }
 
@@ -65,7 +69,7 @@
   }
 
   .input__input--area {
-    min-width: 768px;
+    min-width: 736px;
     height: 160px;
   }
 
