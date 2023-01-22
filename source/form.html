@@ -125,7 +125,7 @@
       <p class="before-text-block__title title--large">Оставьте свой отзыв</p>
       <p class="before-text-block__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
     </div>
-    <form class="form-feedback" action="#" method="get">
+    <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
       <h2 class="visually-hidden">Форма отзыва</h2>
       <div class="form-feedback__wrapper">
         <fieldset class="form-feedback__block form-feedback__block--name">
@@ -232,7 +232,7 @@
           <label class="form-feedback__label"><textarea class="form-feedback__text input__input input__input--area" name="attractions" rows="5" cols="auto" placeholder="Опишите подробно все свои восторги"></textarea></label>
         </fieldset>
         <div class="form-feedback__block-button">
-          <a class="form-feedback__button button-primary" href="#modal-window-error">Оставить отзыв</a>
+          <button class="form-feedback__button button-primary" type="submit">Оставить отзыв</button>
           <span class="form-feedback__hint">* — обязательные поля</span>
         </div>
       </div>
@@ -284,12 +284,12 @@
       </section>
     </div>
   </footer>
-  <div class="modal" id="modal-window-error">
+  <div class="modal">
     <div class="modal-window modal-window__1">
       <h2 class="visually-hidden">ошибка в заполнении формы</h2>
       <span class="title modal-window__title">Что-то пошло не так!</span>
       <span class="description modal-window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
-      <a class="modal-window__button button-primary" href="#close">OK</a>
+      <button class="modal-window__button button-primary" type="button">OK</button>
     </div>
   </div>
   <div class="modal-2">
