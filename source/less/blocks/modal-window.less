@@ -1,4 +1,4 @@
-.modal {
+.modal__1 {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
@@ -9,7 +9,7 @@
   height: 100%;
 }
 
-.modal-2 {
+.modal__2 {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
@@ -20,7 +20,7 @@
   height: 100%;
 }
 
-.modal-true {
+.modal__true {
   position: relative;
   top: 30%;
   display: flex;
@@ -32,7 +32,7 @@
   margin: auto;
 }
 
-.modal-window {
+.modal__window {
   position: relative;
   top: 30%;
   display: flex;
@@ -45,7 +45,7 @@
   margin: auto;
 }
 
-.modal-window__main {
+.modal__window-main {
   padding: 50px 38px 40px 38px;
   width: 244px;
   background-color: #ffffff;
@@ -55,15 +55,11 @@
   align-items: center;
 }
 
-.modal-window__1 {
+.modal__window-1 {
   padding: 45px 42px 35px 42px;
 }
 
-.modal-window__2 {
-  padding: 50px 39px 40px 37px;
-}
-
-.modal-window__title {
+.modal__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -71,58 +67,58 @@
   margin-bottom: 24px;
 }
 
-.modal-window__description {
+.modal__description {
   margin-bottom: 28px;
 }
 
-.modal-window__main .modal-window__description {
+.modal__window-main .modal__description {
   margin-bottom: 0;
 }
 
-.modal:target {
+.modal__1:target {
   display: block;
 }
 
-.modal-window__button {
+.modal__button {
   width: 100%;
   box-sizing: border-box;
 }
 
-.modal-window__button-block {
+.modal__button-block {
   background-color: #f2f2f2;
   padding: 20px;
   width: 280px;
 }
 
 @media (min-width: @tablet-width) {
-  .modal-window {
+  .modal__window {
     position: relative;
     top: 30%;
     width: 400px;
   }
 
-  .modal-window__title {
+  .modal__title {
     font-size: 30px;
     line-height: 40px;
   }
 
-  .modal-true {
+  .modal__true {
     width: 640px;
   }
 
-  .modal-window__main {
+  .modal__window-main {
     padding: 53px 98px 51px 98px;
     width: 444px;
   }
 
-  .modal-window__button-block {
+  .modal__button-block {
     padding: 44px 91px 44px 91px;
     width: 458px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .modal-window {
+  .modal__window {
     position: relative;
     top: 30%;
     width: 400px;

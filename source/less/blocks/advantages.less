@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  flex-wrap: wrap;
 
   &--gray {
     background-color: #eeeeee;
@@ -138,7 +139,8 @@ br {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 33%;
+    min-width: auto;
+    max-width: 33%;
     box-sizing: border-box;
     min-height: 210px;
   }
@@ -155,13 +157,16 @@ br {
     flex-direction: row;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
   }
 
   .advantages__item--gray {
-    width: 190px;
+    min-width: auto;
+    max-width: 33%;
     min-height: 152px;
     padding: 52px 33px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -186,12 +191,14 @@ br {
 
   .advantages__item--icon {
     padding: 69px 50px 69px 50px;
-    width: 300px;
     min-height: 192px;
+    min-width: auto;
+    max-width: 33%;
   }
 
   .advantages__item--gray {
-    width: 300px;
+    min-width: auto;
+    max-width: 33%;
     min-height: 152px;
     padding: 52px 50px;
   }
