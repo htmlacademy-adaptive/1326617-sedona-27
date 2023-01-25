@@ -81,7 +81,7 @@
   </svg>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <svg width="185" height="96">
           <use xlink:href="img/sprite.svg#main-logo"></use>
         </svg>
@@ -97,11 +97,11 @@
           <li class="main-nav__item"><a class="link main-nav-link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="link main-nav-link" href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__item main-nav__item-logo">
-            <div class="main-header__logo-s">
+            <a class="main-header__logo-s" href="index.html">
               <svg width="185" height="96">
                 <use xlink:href="img/sprite.svg#main-logo"></use>
               </svg>
-            </div>
+            </a>
           </li>
           <li class="main-nav__item"><a class="link main-nav-link main-nav-link--active" href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="link main-nav-link" href="https://htmlacademy.ru/">HTML Academy</a></li>
@@ -122,7 +122,7 @@
     </div>
     <div class="before-text-block">
       <h2 class="visually-hidden">Форма отзыва</h2>
-      <p class="before-text-block__title title--large">Оставьте свой отзыв</p>
+      <p class="before-text-block__title title__large">Оставьте свой отзыв</p>
       <p class="before-text-block__description description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
     </div>
     <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
@@ -171,7 +171,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-feedback__block form-block--impression">
+        <fieldset class="form-feedback__block form-block__impression">
           <div class="form-feedback__title-block">
             <div class="separator-horizont"></div>
             <h3 class="title title--form-feedback form-feedback__title">Ваше общее впечатление:</h3>
@@ -193,7 +193,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-feedback__block form-block--place">
+        <fieldset class="form-feedback__block">
           <div class="form-feedback__title-block">
             <div class="separator-horizont"></div>
             <h3 class="title title--form-feedback form-feedback__title">
@@ -230,7 +230,7 @@
           </div>
           <legend class="visually-hidden">Опишите свои эмоции:</legend>
           <label class="form-feedback__label visually-hidden">Ваши эмоции</label>
-            <textarea class="form-feedback__text input__input input__input--area" name="attractions" rows="5" cols="auto" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="input__input input__input--area" name="attractions" rows="5" cols="auto" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form-feedback__block-button">
           <button class="form-feedback__button button-primary" type="submit">Оставить отзыв</button>
@@ -249,7 +249,7 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-network__list">
           <li class="social-network__item social-network__item--vk">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#">
               <svg class="social-network__icon" width="24" height="14">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
@@ -257,7 +257,7 @@
             </a>
           </li>
           <li class="social-network__item social-network__item--telegram">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#">
               <svg class="social-network__icon" width="22" height="18">
                 <use xlink:href="img/sprite.svg#icon-telegram"></use>
               </svg>
@@ -265,7 +265,7 @@
             </a>
           </li>
           <li class="social-network__item social-network__item--youtube">
-            <a class="social-network__link">
+            <a class="social-network__link" href="#">
               <svg class="social-network__icon" width="20" height="14">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -286,22 +286,22 @@
     </div>
   </footer>
   <div class="modal__1">
-    <div class="modal__window modal__window-1">
+    <div class="modal-window modal__window-1">
       <h2 class="visually-hidden">ошибка в заполнении формы</h2>
-      <span class="title modal__title">Что-то пошло не так!</span>
-      <span class="description modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
-      <button class="modal__button button-primary" type="button">OK</button>
+      <span class="title modal-window__title">Что-то пошло не так!</span>
+      <span class="description modal-window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
+      <button class="modal-window__button button-primary" type="button">OK</button>
     </div>
   </div>
   <div class="modal__2">
     <div class="modal__true">
       <h2 class="visually-hidden">отзыв отправлен</h2>
-      <div class="modal__window-main">
-        <span class="title modal__title">Ваш отзыв отправлен!</span>
-        <span class="description modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</span>
+      <div class="modal-window__main">
+        <span class="title modal-window__title">Ваш отзыв отправлен!</span>
+        <span class="description modal-window__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</span>
       </div>
-      <div class="modal__button-block">
-        <button class="modal__button button-primary" type="button">Закрыть окно</button>
+      <div class="modal-window__button-block">
+        <button class="modal-window__button button-primary" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>
