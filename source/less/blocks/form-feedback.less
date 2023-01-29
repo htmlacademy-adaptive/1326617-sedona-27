@@ -56,7 +56,7 @@
 .form-feedback__hint {
   text-align: right;
   min-width: 280px;
-  color: rgba(51, 51, 51, 0.6);
+  color: #333333;
 }
 
 .form-feedback__separator {
@@ -93,13 +93,14 @@
     box-sizing: border-box;
     flex-grow: 1;
     row-gap: 16px;
+    height: auto;
   }
 
   .form-feedback__separator {
     display: block;
     border-left: 1px #dbdbdb solid;
     margin: 0 26px;
-    height: 338px;
+    height: auto;
   }
 
   .form-feedback__list--radio {
@@ -109,9 +110,11 @@
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 16px;
-    max-height: 108px;
+    max-height: auto;
     max-width: 576px;
     margin: 0 auto;
+    height: auto;
+    box-sizing: border-box;
   }
 
   .form-feedback__list--check {
@@ -160,6 +163,10 @@
   .form-feedback__button {
     width: 50%;
   }
+
+  .form-block__impression {
+    height: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -202,8 +209,11 @@
   }
 
   .form-feedback__separator {
+    display: block;
+    border-left: 1px #dbdbdb solid;
     margin: 0 63px;
-    height: 338px;
+    min-height: 338px;
+    height: auto;
   }
 
   .form-feedback__list {
@@ -227,6 +237,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     max-width: 960px;
+    height: auto;
     margin: 0 53px;
     column-gap: 28px;
     row-gap: 28px;
@@ -241,8 +252,9 @@
     margin: 0 45px;
   }
 
-  .form-block--impression {
+  .form-block__impression {
     max-width: 960px;
+    height: auto;
   }
 
   .form-feedback__block-button {
